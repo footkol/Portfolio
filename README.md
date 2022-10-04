@@ -8,4 +8,4 @@ I would like to share this beautiful journey with the rest of the World and perh
 
 To be continued…
 
-To get in touch: <td><a href="https://https://www.linkedin.com/in/nick-kobets/" target="_blank" rel="noopener"><img src="https://icon.signature.email/social/linkedin-square-small-0077b5-FFFFFF.png" alt="LinkedIn icon" width="20" height="20" border="0" /></a>&nbsp;&nbsp;
+To get in touch: <td><a href="https://www.linkedin.com/in/nick-kobets/" target="_blank" rel="noopener"><img src="https://icon.signature.email/social/linkedin-square-small-0077b5-FFFFFF.png" alt="LinkedIn icon" width="20" height="20" border="0" /></a>&nbsp;&nbsp;
