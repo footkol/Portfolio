@@ -1,1 +1,1 @@
-This project is aimed at applying data cleaning skills to practice.
+This project is aimed at applying data cleaning skills with pandas to practice.
