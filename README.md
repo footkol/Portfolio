@@ -8,8 +8,11 @@ I would like to share this beautiful journey with the rest of the World and perh
 
 To be continued…
 
-To get in touch: <td><a href="https://www.linkedin.com/in/nick-kobets/" target="_blank" rel="noopener"><img src="https://icon.signature.email/social/linkedin-square-small-0077b5-FFFFFF.png" alt="LinkedIn icon" width="20" height="20" border="0" /></a>&nbsp;&nbsp;
+To get in touch: 
 
+  <a href="https://www.linkedin.com/in/nick-kobets/">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width=50px>
+</a>
   <a href="mailto:nick@kobets.co.uk">
   <img src="https://cdn-icons-png.flaticon.com/512/893/893292.png" width=50px>
 </a>
