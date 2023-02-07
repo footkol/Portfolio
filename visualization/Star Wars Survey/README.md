@@ -1,0 +1,1 @@
+In this project I attempt to shed the light on some interesting data re Star Wars episodes, characters, fans and provide answers to some important questions, including 'Who shot first, Han or Greedo?'
