@@ -1,4 +1,4 @@
-As a verification of the deployed model, we have included a screenshot of the model prediction response from running customer_test.py.
+As a verification of the deployed model, we have included a screenshot of the model prediction response from running [customer_test.py](customer_test.py).
 
 Screenshot of response in CLI
 
