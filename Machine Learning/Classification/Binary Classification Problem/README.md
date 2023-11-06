@@ -13,3 +13,6 @@ Please refer to other .md files in this folder for further instructions on
 - [how to set up virtual environment on local machine with Pipenv](setting_up_python_virtual_environment.md)
 - [on how to manage environment on Docker](setting_up_environment_for_docker.md)
 - [delpoying model to AWS cloud](deployment_to_the_cloud.md)
+
+# Model deployment confirmation
+A screenshot of Model deployment confirmation can be find [here]()
