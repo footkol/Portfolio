@@ -15,4 +15,4 @@ Please refer to other .md files in this folder for further instructions on
 - [delpoying model to AWS cloud](deployment_to_the_cloud.md)
 
 # Model deployment confirmation
-A screenshot of Model deployment confirmation can be find [here]()
+A screenshot of Model deployment confirmation can be find [in this file](model_deployment_confirmation.md)
