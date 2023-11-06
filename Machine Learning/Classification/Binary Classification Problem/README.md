@@ -8,3 +8,8 @@ Credit card approval datasets used in machine learning typically contain informa
 # Tasks involved
 In this project, our tasks will involve uploading the data, conducting exploratory data analysis, preparing the data, handling missing data, and addressing outliers. We will process both categorical and numerical data, applying the one-hot encoding technique and training logistic regression, as well as tree-based models. Additionally, we will address imbalanced 
 data, select the appropriate model, tune hyperparameters, and apply the final model. Finally, we will deploy the model using Flask, create virtual environment on local machine and also using Docker and provide instructions on deploying the model on AWS Elastic Beanstalk.
+
+Please refer to other .md files in this folder for further instructions on 
+- [how to set up virtual environment on local machine with Pipenv](setting_up_python_virtual_environment.md)
+- [on how to manage environment on Docker](setting_up_environment_for_docker.md)
+- [delpoying model to AWS cloud](deployment_to_the_cloud.md)
