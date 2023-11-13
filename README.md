@@ -1,6 +1,6 @@
 Hello World!!!
 
-This is my journey through the world of Data, with the help of Dataquest where I attempt to grasp all the skills and competence required to become a real world data analyst. 
+This is my journey through the world of Data, where I attempt to grasp all the skills and competence required to become a real world data scientist. 
 
 Here I will be posting  projects which I have completed already, as well as those I am about to embark on. Some of them are based on well-known datasets available online. 
 
