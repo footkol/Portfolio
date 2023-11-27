@@ -78,6 +78,9 @@ Included Holidays:
 
 The attempt was made to identify a location with the largest amount of historical data. As a result, Flatbush Avenue in Brooklyn, one of the five administrative divisions of New York City, was chosen. Specifically, the portion between the 'From Street' (Brighton Line) and 'To Street' (Brighton Line) features exhibited the highest number of time stamps between 2012 and 2019. The BMT Brighton Line, also known as the Brighton Beach Line, is a rapid transit line in the B Division of the New York City Subway in Brooklyn, runs parallel to Flatbush Avenue. 
 
+![image](https://github.com/footkol/Portfolio/assets/79214748/2f19babf-c8df-44e5-bd16-26f353b26dcc)
+
+
 ## Selecting features
 
 The models were trained using datasets that included and excluded holiday features. This was done to compare the results and assess the impact of incorporating holiday information as an additional feature on the predictive performance.
