@@ -69,3 +69,13 @@ Included Holidays:
 - Valentine’s Day
 - Veterans Day
 - Washington's Birthday
+
+
+## Model selection
+
+
+While selecting a model for this project I decided to opt for Neural Networks approach.  Selecting deep learning models, is advantageous for traffic prediction due to its inherent ability to capture intricate patterns, model complex relationships and adapt to varying temporal dependencies. Unlike traditional machine learning models, neural networks excel at automatically learning hierarchical representations, enabling them to extract relevant features from diverse data types, such as time-series and categorical information. This adaptability, coupled with the capacity to handle non-linearities, makes neural networks a superior choice for traffic prediction tasks compared to conventional machine learning models.
+
+Recurrent Neural Networks (RNNs) are a type of neural network designed for handling sequential data. What sets RNNs apart is their ability to retain information from previous inputs, making them effective for tasks where context or order matters, such as time-series prediction. However, traditional RNNs can face challenges with long-term dependencies, leading to the development of more advanced architectures like Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) networks, which address these issues by allowing the model to selectively retain or forget information over time.
+
+Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are both types of recurrent neural network (RNN) architectures designed to address the vanishing gradient problem in traditional RNNs, allowing them to capture long-term dependencies in sequential data.
