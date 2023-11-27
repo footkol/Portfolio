@@ -1,3 +1,7 @@
+## Introduction
+
+The project focused on predicting traffic in New York City. To build the model, a specific location with the highest volume of time stamps was selected for training, emphasizing a concentrated dataset for enhanced model accuracy.
+
 ## Data structure
 
 ### Traffic sample features
@@ -5,7 +9,7 @@
 The data was collected from [NYC Open Data](https://data.cityofnewyork.us/Transportation/Automated-Traffic-Volume-Counts/7ym2-wayt)
 . The New York City Department of Transportation (NYC DOT) employs Automated Traffic Recorders (ATR) to gather traffic sample volume counts at bridge crossings and roadways. The dataset comprising over 27 million data samples. 
 
-For this exercise, the selected features included date stamps indicating when the count was conducted. These date stamps were separated into distinct columns for the year, month, day, hour, and minute, with data collected at 15-minute intervals. Additional features encompassed the 'On Street' and 'To Street,' providing approximate locations of the Automated Traffic Recorders. The 'Direction' feature represented the text-based direction of traffic at the counting location. The target variable 'Vol' represented the total count collected within 15-minute increments.
+For this exercise, the selected features included date stamps indicating when the count was conducted. These date stamps were separated into distinct columns for the year, month, day, hour, and minute, with data collected at 15-minute intervals. Additional features encompassed the 'On Street', 'From Street' and 'To Street,' providing more precise locations of the Automated Traffic Recorders. The 'Direction' feature represented the text-based direction of traffic at the counting location. The target variable 'Vol' represented the total count collected within 15-minute increments.
 
 In the model development, supplementary features were incorporated, such as weather features and public holiday indicators.
 
@@ -70,6 +74,13 @@ Included Holidays:
 - Veterans Day
 - Washington's Birthday
 
+## Initial Data Preprocessing 
+
+The attempt was made to identify a location with the largest amount of historical data. As a result, Flatbush Avenue in Brooklyn, one of the five administrative divisions of New York City, was chosen. Specifically, the portion between the 'From Street' (Brighton Line) and 'To Street' (Brighton Line) features exhibited the highest number of time stamps between 2012 and 2019. The BMT Brighton Line, also known as the Brighton Beach Line, is a rapid transit line in the B Division of the New York City Subway in Brooklyn, runs parallel to Flatbush Avenue. 
+
+## Selecting features
+
+The models were trained using datasets that included and excluded holiday features. This was done to compare the results and assess the impact of incorporating holiday information as an additional feature on the predictive performance.
 
 ## Model selection
 
