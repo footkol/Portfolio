@@ -93,3 +93,11 @@ While selecting a model for this project I decided to opt for Neural Networks ap
 Recurrent Neural Networks (RNNs) are a type of neural network designed for handling sequential data. What sets RNNs apart is their ability to retain information from previous inputs, making them effective for tasks where context or order matters, such as time-series prediction. However, traditional RNNs can face challenges with long-term dependencies, leading to the development of more advanced architectures like Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) networks, which address these issues by allowing the model to selectively retain or forget information over time.
 
 Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are both types of recurrent neural network (RNN) architectures designed to address the vanishing gradient problem in traditional RNNs, allowing them to capture long-term dependencies in sequential data.
+
+## Next steps
+
+The model has room for improvement, and depending on the available data, enhancements can be achieved by adjusting various hyperparameters such as the number of layers, units, epochs, or learning rate to optimize performance.
+
+Once you are content with your model, deployment for predictions on new or unseen data is possible. Utilizing tools like TensorFlow Serving, PyTorch Serve, or Flask, you can establish a web service or API capable of receiving and responding to requests from clients or applications. Hosting and scaling the model in the cloud can be accomplished through platforms like AWS, Google Cloud, or Azure.
+
+Maintenance of the model is crucial over time, considering potential changes in data and the environment. Employing strategies such as retraining, updating, or fine-tuning ensures the model stays current with the latest data and trends. Techniques like anomaly detection, drift detection, or feedback loops can be applied to monitor and identify changes or issues in the model's performance or behavior.
