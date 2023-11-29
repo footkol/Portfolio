@@ -94,6 +94,26 @@ Recurrent Neural Networks (RNNs) are a type of neural network designed for handl
 
 Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are both types of recurrent neural network (RNN) architectures designed to address the vanishing gradient problem in traditional RNNs, allowing them to capture long-term dependencies in sequential data.
 
+## Final results
+
+
+The chart showcases the predicted values from both LSTM and GRU models alongside the actual values for easy comparison.
+
+![newplot](https://github.com/footkol/Portfolio/assets/79214748/0a6d6452-4630-4bf2-aaec-93e5bccdae8e)
+
+The models evaluation was based on comapring Mean Absolute Error (MAE), Root Mean Squared Error (RMSE) and R-squared (R2) values:
+- RNN metrics: {'mae': 8.060538, 'rmse': 10.506156932774884, 'r2': 0.43302360364046144}
+- GRU metrics: {'mae': 7.6822305, 'rmse': 10.218281119785694, 'r2': 0.4636689643741928}
+- LSTM metrics: {'mae': 7.8293996, 'rmse': 10.699591684126608, 'r2': 0.411953573268795}
+
+Lower MAE values indicate better performance. Both GRU and LSTM have lower MAE compared to RNN, suggesting they are better at predicting the target variable.
+
+Similar to MAE, lower RMSE values indicate better performance. In this case, GRU has the lowest RMSE.
+
+R² ranges from 0 to 1, with 1 indicating a perfect fit. Higher R² values suggest that a larger proportion of the variance in the target variable is explained by the model. In this case, GRU has the highest R², indicating better explanatory power compared to RNN and LSTM.
+
+It's important to consider these metrics collectively to gain a comprehensive understanding of the models' performance. 
+
 ## Next steps
 
 The model has room for improvement, and depending on the available data, enhancements can be achieved by adjusting various hyperparameters such as the number of layers, units, epochs, or learning rate to optimize performance.
