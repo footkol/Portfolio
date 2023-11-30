@@ -81,10 +81,6 @@ The attempt was made to identify a location with the largest amount of historica
 ![image](https://github.com/footkol/Portfolio/assets/79214748/2f19babf-c8df-44e5-bd16-26f353b26dcc)
 
 
-## Selecting features
-
-The models were trained using datasets that included and excluded holiday features. This was done to compare the results and assess the impact of incorporating holiday information as an additional feature on the predictive performance.
-
 ## Model selection
 
 
