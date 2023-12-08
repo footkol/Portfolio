@@ -132,3 +132,7 @@ The model has room for improvement, and depending on the available data, enhance
 Once you are content with your model, deployment for predictions on new or unseen data is possible. Utilizing tools like TensorFlow Serving, PyTorch Serve, or Flask, you can establish a web service or API capable of receiving and responding to requests from clients or applications. Hosting and scaling the model in the cloud can be accomplished through platforms like AWS, Google Cloud, or Azure.
 
 Maintenance of the model is crucial over time, considering potential changes in data and the environment. Employing strategies such as retraining, updating, or fine-tuning ensures the model stays current with the latest data and trends. Techniques like anomaly detection, drift detection, or feedback loops can be applied to monitor and identify changes or issues in the model's performance or behavior.
+
+## Note
+
+GitHub performs a static render of the notebooks and it doesn't include the embedded HTML/JavaScript that makes up a plotly graph. In order to see plotly graphs in a rich view of the notebook please paste the link to this GitHub notebook into http://nbviewer.jupyter.org/ 
