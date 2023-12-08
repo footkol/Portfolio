@@ -83,8 +83,15 @@ The attempt was made to identify a location with the largest amount of historica
 
 ## Model selection
 
+There are several well-researched methods applicable to creating traffic prediction models. First is the use of statistical methods, allowing the identification of traffic patterns at different scales: daily, on different days of the week, seasonal, etc. These methods are usually easier, faster, and more cost-effective to implement compared to machine learning approaches. However, they tend to be less accurate since they cannot process as much multivariate data.
 
-While selecting a model for this project I decided to opt for Neural Networks approach.  Selecting deep learning models, is advantageous for traffic prediction due to its inherent ability to capture intricate patterns, model complex relationships and adapt to varying temporal dependencies. Unlike traditional machine learning models, neural networks excel at automatically learning hierarchical representations, enabling them to extract relevant features from diverse data types, such as time-series and categorical information. This adaptability, coupled with the capacity to handle non-linearities, makes neural networks a superior choice for traffic prediction tasks compared to conventional machine learning models.
+In particular, auto-regressive integrated moving average (ARIMA) models have been actively employed for traffic prediction since the 1970s. They are easy to implement and have demonstrated higher accuracy compared to other statistical methods. ARIMA follows a classical statistical approach, analyzing past events to predict future ones. It relies on data collected at regular time intervals and assumes that past patterns will repeat in the future. However, traffic flow is a complex structure with numerous variables, making it challenging to effectively process using univariate ARIMA models.
+
+On the other hand, machine learning offers the advantage of not requiring assumptions or prior knowledge. It can automatically extract useful information from datasets, compensating for the limitations of traditional methods. Ensemble learning, a significant branch of machine learning, has gained widespread attention. It combines multiple learners to reduce generalization errors, minimize the possibility of local optimization, and address overfitting.
+
+For this project, I chose LightGBM, a powerful open-source gradient boosting framework designed for efficiency and high performance. It proves to be an excellent tool for handling large datasets and facilitating the creation of accurate predictions.
+
+In addition to selecting the model based on decision tree algorithms mentioned above, I have also opted for a Neural Networks approach.  Selecting deep learning models, is advantageous for traffic prediction due to its inherent ability to capture intricate patterns, model complex relationships and adapt to varying temporal dependencies. Unlike traditional machine learning models, neural networks excel at automatically learning hierarchical representations, enabling them to extract relevant features from diverse data types, such as time-series and categorical information. This adaptability, coupled with the capacity to handle non-linearities, makes neural networks a superior choice for traffic prediction tasks compared to conventional machine learning models.
 
 Recurrent Neural Networks (RNNs) are a type of neural network designed for handling sequential data. What sets RNNs apart is their ability to retain information from previous inputs, making them effective for tasks where context or order matters, such as time-series prediction. However, traditional RNNs can face challenges with long-term dependencies, leading to the development of more advanced architectures like Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) networks, which address these issues by allowing the model to selectively retain or forget information over time.
 
@@ -93,22 +100,30 @@ Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) are both types of r
 ## Final results
 
 
-The chart showcases the predicted values from both LSTM and GRU models alongside the actual values for easy comparison.
+The charts showcase the predicted values from all four models alongside the actual values for easy comparison.
+### LightGBM
+![LightGBM](https://github.com/footkol/Portfolio/assets/79214748/b62689c0-954e-49f0-9c78-7c46711006cc)
 
-![newplot](https://github.com/footkol/Portfolio/assets/79214748/0a6d6452-4630-4bf2-aaec-93e5bccdae8e)
+### LSTM
+![LSTM](https://github.com/footkol/Portfolio/assets/79214748/01888003-30d2-422b-aec7-640b35f4ac34)
 
-The models evaluation was based on comapring Mean Absolute Error (MAE), Root Mean Squared Error (RMSE) and R-squared (R2) values:
-- RNN metrics: {'mae': 8.060538, 'rmse': 10.506156932774884, 'r2': 0.43302360364046144}
-- GRU metrics: {'mae': 7.6822305, 'rmse': 10.218281119785694, 'r2': 0.4636689643741928}
-- LSTM metrics: {'mae': 7.8293996, 'rmse': 10.699591684126608, 'r2': 0.411953573268795}
+### GRU
+![GRU](https://github.com/footkol/Portfolio/assets/79214748/4283bbb0-392c-4e6b-a2d2-3b89de49aff2)
 
-Lower MAE values indicate better performance. Both GRU and LSTM have lower MAE compared to RNN, suggesting they are better at predicting the target variable.
+### RNN
+![RNN](https://github.com/footkol/Portfolio/assets/79214748/a9261e9c-2991-43b1-beff-d7dc36d6249a)
 
-Similar to MAE, lower RMSE values indicate better performance. In this case, GRU has the lowest RMSE.
+LightGBM model had displayed the best performance in comparison to neural network models. Among the RNN models LSTM showed the best results. 
 
-R² ranges from 0 to 1, with 1 indicating a perfect fit. Higher R² values suggest that a larger proportion of the variance in the target variable is explained by the model. In this case, GRU has the highest R², indicating better explanatory power compared to RNN and LSTM.
+![results](https://github.com/footkol/Portfolio/assets/79214748/cbd55df3-c2be-4f5d-bec2-ba0befc7b528)
 
-It's important to consider these metrics collectively to gain a comprehensive understanding of the models' performance. 
+
+Lower MSE, MAE and RMSE indicate better model performance. The R2 score ranges from 0 to 1. A score of 1 indicates that the model perfectly predicts the dependent variable, while a score of 0 suggests that the model provides no improvement over a simple mean-based model.
+
+However, it is essential to remember that these interpretations are general guidelines, and the context of our specific problem and the characteristics of our data should be considered when evaluating model performance. It's important to consider these metrics collectively to gain a comprehensive understanding of the models' performance.
+
+Visual comparison of LSTM with LightGBM model
+![LSTM and LightGBM](https://github.com/footkol/Portfolio/assets/79214748/4ca7c546-0181-463f-acea-0050149acc72)
 
 ## Next steps
 
